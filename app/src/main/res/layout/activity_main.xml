@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/layout" >
+
+        <TextView
+            style="@style/textView"
+            android:text="Username" />
+
+        <EditText
+            android:id="@+id/username"
+            style="@style/editText" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layout" >
+
+        <TextView
+            style="@style/textView"
+            android:text="Password" />
+
+        <EditText
+            android:id="@+id/password"
+            style="@style/editText" />
+    </LinearLayout>
+
+    <RelativeLayout
+        style="@style/layout" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:onClick="saveInfo"
+            android:text="Save Info"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:onClick="displayInfo"
+            android:text="Display Info"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/layout"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/text_output"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Large Text" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
